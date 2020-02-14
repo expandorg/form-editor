@@ -1,0 +1,38 @@
+{
+  "name": "@expandorg/forms",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Expand.org form editor",
+  "license": "MPL-2.0",
+  "main": "index.js",
+  "author": "expand.org",
+  "scripts": {
+    "lerna": "lerna",
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "test": "jest --config jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/expandorg/form-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/expandorg/form-editor/issues"
+  },
+  "homepage": "https://github.com/expandorg/form-editor#readme",
+  "keywords": [
+    "react",
+    "form-editor",
+    "expand"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@expandorg/eslint-config": "^0.5.11",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "flow-bin": "^0.118.0",
+    "lerna": "^3.20.2",
+    "prettier": "^1.19.1"
+  }
+}
