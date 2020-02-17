@@ -12,3 +12,5 @@ coverage
 .cache
 .docz/
 .vscode
+lerna-debug.log
+

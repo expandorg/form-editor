@@ -1,0 +1,8 @@
+{
+  "name": "@expandorg/form-editor-docs",
+  "private": true,
+  "description": "Form editor",
+  "author": "expand.org",
+  "license": "MPL-2.0",
+  "main": "index.js"
+}
