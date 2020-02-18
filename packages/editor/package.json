@@ -16,23 +16,22 @@
     "@expandorg/components": "^0.2.0",
     "@expandorg/modules": "^0.2.0",
     "@expandorg/uikit": "^0.2.0",
+    "@expandorg/validation": "^0.2.0",
     "classnames": "^2.0.0",
     "prop-types": "^15.0.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-spring": "^8.0.0"
-  },
-  "devDependencies": {
-    "@expandorg/components": "^0.2.94",
-    "@expandorg/modules": "^0.2.161",
-    "@expandorg/uikit": "^0.2.23",
-    "classnames": "^2.2.6",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-spring": "^8.0.27"
+    "react-dnd": "^10.0.0",
+    "react-dnd-html5-backend": "^10.0.0",
+    "react-dom": "^16.0.0"
   },
   "dependencies": {
+    "debounce": "^1.2.0",
+    "draft-js": "^0.11.4",
+    "draft-js-export-html": "^1.4.1",
+    "draft-js-import-html": "^1.4.1",
+    "draft-js-mention-plugin": "^3.1.5",
+    "draft-js-plugins-editor": "^3.0.0",
+    "immer": "^5.3.6",
     "nanoid": "^2.1.11"
   }
 }

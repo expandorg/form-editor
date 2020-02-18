@@ -1,0 +1,50 @@
+@import '~@expandorg/uikit/colors'
+@import '~@expandorg/uikit/font'
+
+.container
+  box-sizing: border-box;
+  position relative
+
+  display flex
+  align-items: center
+  justify-content: center
+
+  padding: 0 10px
+
+  height: 60px;
+
+  background: color-white;
+  box-shadow: light-shadow
+
+  border-radius: 5px;
+
+.name
+  font(subtitle)
+  color: color-text-dark;
+  text-transform: uppercase
+
+  text-align: center
+  flex-grow: 1
+
+.tooltip
+  position absolute
+  left: -12px
+  top: calc(50% - 12px)
+
+  width: 24px
+  height: 24px
+
+  path
+    fill: color-yellow
+
+.remove
+  box-sizing: border-box
+
+  border: none;
+  background-color: transparent
+
+  width 24px
+  height 24px
+
+  cursor pointer
+  outline 0

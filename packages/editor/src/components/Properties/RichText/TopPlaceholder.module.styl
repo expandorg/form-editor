@@ -1,0 +1,23 @@
+@import '~@expandorg/uikit/colors';
+@import '~@expandorg/uikit/font';
+
+.container
+  position: absolute;
+  box-sizing: border-box;
+
+  left: 16px
+  top :20px
+
+  font(body, 800, 11px, 11px)
+  white-space: nowrap;
+  color: color-primary-blue
+
+  transition-property: transform font-size font-weight color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transform-origin: left center;
+
+  pointer-events: none;
+
+.visible
+  transform: translateY(-14px)

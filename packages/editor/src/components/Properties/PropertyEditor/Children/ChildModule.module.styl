@@ -1,0 +1,58 @@
+@import '~@expandorg/uikit/colors';
+@import '~@expandorg/uikit/font';
+
+hover()
+  .child:hover &
+    {block}
+
+.child
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  height: 46px
+  margin-bottom: 10px
+
+  border-radius: 5px;
+  border: 1px solid color-medium-blue
+
+  cursor pointer
+
+  &:last-child
+    margin-bottom: 0
+
+.miniIcon
+  min-width: 35px
+  line-height: 46px
+  text-align: center;
+  cursor: grab;
+
+  background-color: color-medium-blue
+  background-position: center;
+  background-origin: border-box
+  background-repeat: no-repeat
+
+
+  border: 1px solid color-medium-blue
+  border-top-left-radius: 5px
+  border-bottom-left-radius: 5px
+
+  +hover()
+    background-color: lighten(color-medium-blue, 30%)
+    border-color: lighten(color-medium-blue, 30%)
+
+.name
+  box-sizing: border-box;
+  padding: 0 6px
+
+  color: color-text-dark;
+  font(small-text, 500, false, 46px)
+
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+  +hover()
+    color: lighten(color-text-dark, 20%)

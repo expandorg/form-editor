@@ -1,0 +1,32 @@
+@import '~@expandorg/uikit/colors'
+@import '~@expandorg/uikit/font'
+
+.container
+  position: relative;
+
+.button
+  display: flex
+  justify-content: center
+  align-items: center
+
+  height: 30px
+  padding: 0 10px
+
+  color: #34A893
+  text-transform: uppercase
+  background: #E1F2EF
+  border: 1px solid #34A893
+  font(body-bold, false, 15px, false)
+  line-height: 30px
+  letter-spacing: 0.1em
+
+  outline: 0
+  cursor: pointer
+
+  &:disabled
+    cursor: default;
+
+    color: color-text-disabled
+    background-color: transparent;
+    font-weight: normal
+    border-color: color-text-disabled

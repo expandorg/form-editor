@@ -1,0 +1,50 @@
+@import '~@expandorg/uikit/colors';
+
+.container
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch
+
+.sidebar
+  box-sizing: border-box
+  background-color: color-blue-background;
+  width: 240px
+
+.content
+  flex-grow: 1
+  background-color: color-white;
+  display: flex
+  flex-direction: column
+
+.canvas
+  position: relative;
+  box-sizing: border-box;
+  flex-grow: 1
+
+  display: flex
+  overflow-y: auto
+
+
+.topbar
+  box-sizing: border-box;
+  padding: 0 20px 15px
+
+
+.bottombar
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  padding: 0 20px
+
+  height: 80px
+  min-height: 80px
+
+  background-color: color-white
+
+  box-shadow: heavy-shadow

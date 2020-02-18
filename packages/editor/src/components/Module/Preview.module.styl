@@ -1,0 +1,52 @@
+@import '~@expandorg/uikit/colors';
+@import '~@expandorg/uikit/size';
+
+.container
+  box-sizing: border-box;
+
+  padding: 0 16px 15px
+
+  background: color-white;
+  box-shadow: 0px 2px 5px #CEE1F7;
+
+  border-radius: 5px;
+  border: 1px solid color-heavy-blue
+
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+
+  &:hover
+    box-shadow: 0px 10px 15px #CCE3FD;
+
+.inner
+  position: relative;
+  min-height: 15px
+
+.dimmed
+  opacity: 0.35
+
+.hidden
+  display none
+
+.edit
+  position: absolute;
+
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+
+  cursor: pointer;
+
+  z-index: 3
+
+
+.selected
+  box-shadow: heavy-shadow
+  transform: translateX(0)
+
+  &:hover
+    box-shadow: heavy-shadow
+
+  @media(max-width: 1600px)
+    transform: translateX(-210px)
+

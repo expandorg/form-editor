@@ -1,0 +1,25 @@
+@import '~@expandorg/uikit/colors'
+@import '~@expandorg/uikit/font'
+
+.container
+  padding: 0 7px 0 25px
+  box-sizing: border-box;
+  height: 40px
+  transition: background-color 0.4s cubic-bezier(.27,1.27,.48,.56);
+
+  &:active
+    background-color: #E1F2EF
+
+.focused
+  background-color: #E1F2EF;
+
+.text
+  display: inline-block;
+  max-width: 200px;
+
+  color: color-text-dark
+  font(body, false, false, 40px)
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;

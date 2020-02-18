@@ -1,0 +1,60 @@
+@import '~@expandorg/uikit/colors';
+@import '~@expandorg/uikit/font';
+
+.container
+  margin-top: 40px
+
+.item
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  margin-top: 30px
+
+.option
+  width: 100%
+  padding-right: 50px
+
+.default
+  margin-bottom: 20px
+  padding-right: 50px
+
+.remove
+  width: 16px
+  height: 16px
+
+  padding: 3px
+  box-sizing: border-box;
+
+  margin-left: 25px
+
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+
+  path
+    fill: color-text-disabled
+
+  &:hover
+    path
+      fill: lighten(color-text-disabled, 30%)
+
+
+.add
+  width: 100%
+  height: 50px
+  margin-top 30px
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+  outline: none;
+
+  font(subtitle-bold, 800)
+  text-transform: uppercase
+  letter-spacing: 0.15em;
+  border-radius: 2px
+  color: color-text-blue
+  background-color: transparent;
+  border: 1px dashed color-heavy-blue
+

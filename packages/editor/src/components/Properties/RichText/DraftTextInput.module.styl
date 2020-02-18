@@ -1,0 +1,52 @@
+@import '~@expandorg/uikit/colors';
+@import '~@expandorg/uikit/font';
+
+.container
+  box-sizing: border-box;
+  position: relative;
+
+  border: 1px solid transparent
+  padding: 23px 15px 8px 16px
+
+  background-color: color-light-blue
+  border-bottom: 1px solid  color-heavy-blue
+  border-top-left-radius: 5px
+  border-top-right-radius: 5px
+
+.input
+  box-sizing: border-box;
+  font(body, false, false, normal)
+
+  background-color: transparent
+  color: color-blue-background
+
+  transition: all 0.2s ease-out;
+
+  :global(.public-DraftEditorPlaceholder-inner)
+    color: color-text-dark
+
+.focus
+  border-bottom-color color-primary-blue
+
+.vars
+  box-sizing: border-box;
+
+  position: absolute;
+  right: 16px
+  top: 20px
+
+  font(subtitle, 800)
+  text-transform: uppercase
+
+  color: #25796A
+  background-color: #E1F2EF
+  border: 1px solid #34A893;
+  padding: 4px 5px
+
+  outline: 0
+  cursor pointer
+  z-index 1
+
+.dropdown
+  left: inherit;
+  right: 0

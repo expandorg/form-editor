@@ -1,0 +1,189 @@
+@import '~@expandorg/uikit/colors';
+
+.DraftEditor
+
+  &-content
+    height: inherit;
+    text-align: initial
+
+    &[contenteditable=true]
+      -webkit-user-modify: read-write-plaintext-only
+
+  &-root
+    height: inherit;
+    text-align: initial
+    position: relative
+
+  &-editorContainer
+    height: inherit;
+    text-align: initial
+    background-color: rgba(255, 255, 255, 0);
+    border-left: .1px solid transparent;
+    position: relative;
+    z-index: 1
+
+.public-DraftEditor-block
+  position: relative
+
+.public-DraftEditorPlaceholder
+  &-root
+    left: 0;
+    text-align: left
+    color: color-text-dark;
+    position: absolute;
+    z-index: 1
+
+  &-hasFocus
+    color: #bdc1c9
+
+.DraftEditorPlaceholder-hidden
+  display: none
+
+.public-DraftStyleDefault
+  &-ltr
+    direction: ltr;
+    text-align: left
+
+  &-rtl
+    direction: rtl;
+    text-align: right
+
+  &-listLTR
+    direction: ltr
+
+  &-listRTL
+    direction: rtl
+
+  &-ol, &-ul
+    margin: 16px 0;
+    padding: 0
+
+  &-depth0&-listLTR
+    margin-left: 1.5em
+
+  &-depth0&-listRTL
+    margin-right: 1.5em
+
+  &-depth1&-listLTR
+    margin-left: 3em
+
+  &-depth1&-listRTL
+    margin-right: 3em
+
+  &-depth2&-listLTR
+    margin-left: 4.5em
+
+  &-depth2&-listRTL
+    margin-right: 4.5em
+
+  &-depth3&-listLTR
+    margin-left: 6em
+
+  &-depth3&-listRTL
+    margin-right: 6em
+
+  &-depth4&-listLTR
+    margin-left: 7.5em
+
+  &-depth4&-listRTL
+    margin-right: 7.5em
+
+  &-unorderedListItem
+    list-style-type: square;
+    position: relative
+
+  &-unorderedListItem&-depth0
+    list-style-type: disc
+
+  &-unorderedListItem&-depth1
+    list-style-type: circle
+
+  &-orderedListItem
+    list-style-type: none;
+    position: relative
+
+  &-orderedListItem&-listLTR:before
+    left: -36px;
+    position: absolute;
+    text-align: right;
+    width: 30px
+
+  &-orderedListItem&-listRTL:before
+    position: absolute;
+    right: -36px;
+    text-align: left;
+    width: 30px
+
+  &-orderedListItem:before
+    content: counter(ol0) ". ";
+    counter-increment: ol0
+
+  &-orderedListItem&-depth1:before
+    content: counter(ol1) ". ";
+    counter-increment: ol1
+
+  &-orderedListItem&-depth2:before
+    content: counter(ol2) ". ";
+    counter-increment: ol2
+
+  &-orderedListItem&-depth3:before
+    content: counter(ol3) ". ";
+    counter-increment: ol3
+
+  &-orderedListItem&-depth4:before
+    content: counter(ol4) ". ";
+    counter-increment: ol4
+
+  &-depth0&-reset
+    counter-reset: ol0
+
+  &-depth1&-reset
+    counter-reset: ol1
+
+  &-depth2&-reset
+    counter-reset: ol2
+
+  &-depth3&-reset
+    counter-reset: ol3
+
+  &-depth4&-reset
+    counter-reset: ol4
+
+  &-block
+    position: relative;
+    white-space: pre-wrap
+
+    .DraftEditor-alignLeft &
+      text-align: left
+
+    .DraftEditor-alignCenter &
+      text-align: center
+
+    .DraftEditor-alignRight &
+      text-align: right
+
+    .DraftEditor-align-center &
+      text-align: center
+
+    .DraftEditor-align-right &
+      text-align: right
+
+    .DraftEditor-block-type-header-one &
+      font-size: 36px
+      font-weight: 300
+
+    .DraftEditor-block-type-header-two &
+      font-size: 24px
+      font-weight: 400
+
+    .DraftEditor-block-type-header-three &
+      font-size: 18px
+      font-weight: 400
+
+    .DraftEditor-block-type-header-four &
+      font-size: 16px
+      font-weight: 500
+
+    .DraftEditor-block-type-header-unstyled &
+      font-size: 16px
+      font-weight: 400

@@ -1,0 +1,56 @@
+@import '~@expandorg/uikit/colors'
+@import '~@expandorg/uikit/font'
+
+.container
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position relative
+
+.btn
+  position: relative;
+
+  box-sizing: border-box;
+  padding: 0
+
+  width: 30px
+  height: 30px
+
+  outline: 0
+  cursor: pointer;
+  background-color: transparent
+
+  path
+    fill: color-text-heavy-blue
+
+  &:hover
+    path
+      fill: color-text-blue
+
+
+.dialog
+  position absolute
+  box-sizing: border-box
+  top: 100%
+  left: calc(50% - 200px)
+
+  width 400px
+
+  box-shadow: heavy-shadow
+
+  background-color: color-white
+  border-radius: 5px
+  padding: 20px 20px
+
+  z-index 3
+
+.inner
+  display flex
+  justify-content: space-between
+  align-items: baseline
+
+.save
+  margin-left: 20px
+  padding: 0 10px
+  width: auto
+  min-width: auto

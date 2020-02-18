@@ -1,0 +1,57 @@
+@import '~@expandorg/uikit/colors'
+@import '~@expandorg/uikit/font'
+
+.container
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  height: 100%;
+
+.content
+  box-sizing: border-box;
+  overflow: scroll;
+  flex-grow: 1
+  background-color: rgba(229, 229, 229, 0.25);
+
+.props
+  box-sizing: border-box
+  padding: 40px 50px 50px
+
+  background-color: color-white
+
+.validation
+  box-sizing: border-box
+  padding: 40px 50px
+
+.title
+  font(h2-title)
+  color: color-text-dark;
+  margin-bottom: 30px
+
+.actions
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-color: color-white
+
+  box-sizing: border-box;
+  padding: 10px 20px 10px
+  min-height: 70px
+  height: 70px
+
+  > *
+    margin-left: 20px
+
+.btn
+  height: 40px
+  width: 130px
+
+.done
+  color: color-light-blue
+  background-color: color-teel-dark
+
+  &:hover
+    background-color: lighten(color-teel-dark, 5%)

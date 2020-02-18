@@ -1,0 +1,70 @@
+@import '~@expandorg/uikit/colors'
+@import '~@expandorg/uikit/font'
+
+.container
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  box-sizing: border-box
+  padding-top: 16px
+  height 30px
+
+.name
+  flex-grow: 1
+  color: color-text-grey
+  font(small-text, false, 14px, 20px)
+  cursor pointer
+
+.actions
+  position relative
+  > *
+    margin-left: 15px
+
+    &:first-child
+      margin-left: 0
+
+  path
+    fill: color-text-grey
+
+.more
+  border:  0
+  width: 24px
+  height 24px
+  background-color: transparent
+  cursor pointer
+  outline 0
+
+  path
+    fill: color-heavy-blue
+
+  &:hover
+    path
+      fill: color-primary-blue
+
+.toggle
+  box-sizing: border-box
+
+  width: 20px
+  height 20px
+
+  margin-right: 4px
+
+  border none
+  background-color: transparent
+
+  outline: 0
+  cursor pointer
+
+.arrow
+  position relative
+  top: -2px
+
+  transition: transform 70ms ease-in
+
+  path
+    fill color-text-blue
+
+.collapsed
+  transform-origin: center center
+  transform: rotate(-90deg)

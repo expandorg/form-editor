@@ -1,0 +1,43 @@
+@import '~@expandorg/uikit/colors'
+@import '~@expandorg/uikit/font'
+
+.container
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+.btn
+  position: relative;
+  font(body, normal, 17px, 22px)
+  line-height: 22px
+
+  color: color-text-heavy-blue
+  background-color: transparent
+
+  box-sizing: border-box;
+  margin: 0 5px
+  padding: 0 5px
+
+  outline: 0
+  cursor: pointer;
+
+  &:first-child
+    margin-left: 0
+
+  &:last-child
+    margin-right: 0
+
+  &:hover
+    color: color-text-dark
+
+.active
+  color: color-text-dark
+
+.b
+  font-weight: 800
+
+.i
+  font-style: italic;
+
+.u
+  text-decoration: underline;

@@ -1,0 +1,54 @@
+@import '~@expandorg/uikit/colors';
+@import '~@expandorg/uikit/font';
+
+.dropdown
+  box-sizing: border-box
+  position relative
+  width: auto
+  display: inline-block
+  padding: 0 20px 0 0
+  color: color-light-blue
+
+  &::before
+    content: ' '
+    height: 1px
+    position absolute
+    bottom: -10px
+    left: 0
+    right: 0
+    border-bottom: 1px solid color-heavy-blue
+
+  &::after
+    position: absolute
+    content: ''
+    right: 0
+    top: calc(50% - 7px)
+    width: 12px
+    height: 16px
+    background-color: transparent;
+    background-position: center;
+    background-origin: border-box
+    background-repeat: no-repeat
+    background-image: url("~@expandorg/uikit/assets/arrow-down.svg")
+
+
+  &:last-child
+    margin-right: 0
+
+.input
+  display: inline-block
+  width: 110px
+  border-bottom-width: 1px
+
+  :global(.gem-input)
+    color: color-light-blue
+    border-bottom-width: 1px
+
+  :global(.gem-autocomplete-suggestions)
+    right: initial
+    top: 30px
+    max-height: 350px
+
+  :global(.gem-autocomplete-suggestion)
+    padding-right: 20px
+
