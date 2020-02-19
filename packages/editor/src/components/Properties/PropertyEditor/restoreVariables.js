@@ -2,8 +2,7 @@
 import type { ContentState, ContentBlock } from 'draft-js';
 
 import { findVariables } from '@expandorg/modules/model';
-
-import { restoreEntities } from '../RichText';
+import { restoreEntities } from '@expandorg/richtext';
 
 export const findVarsRanges = (block: ContentBlock): Array<Object> =>
   findVariables(block.getText());

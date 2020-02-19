@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 
 import nanoid from 'nanoid';
 
+import { DraftTextInput } from '@expandorg/richtext';
+
 import { ReactComponent as X } from '@expandorg/uikit/assets/x.svg';
 
 import { removeAtIndex, replaceAtIndex } from '../../../common/utils';
 
-import { DraftTextInput } from '../RichText';
 import { restoreVariables } from './restoreVariables';
 
 import styles from './OptionsEditor.module.styl';

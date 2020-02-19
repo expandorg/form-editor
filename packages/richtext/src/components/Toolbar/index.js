@@ -6,6 +6,7 @@ import FontStyleTool from './FontStyleTool';
 import VariablesButton from './VariablesTool/VariablesButton';
 import LinkTool from './Link/LinkTool';
 import ListTool from './ListTool';
+import { linkPlugin } from './Link/Link';
 
 export {
   AlignmentTool,
@@ -14,4 +15,5 @@ export {
   FontStyleTool,
   LinkTool,
   VariablesButton,
+  linkPlugin,
 };

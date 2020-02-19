@@ -1,7 +1,7 @@
 {
-  "name": "@expandorg/form-editor",
-  "version": "0.1.2",
-  "description": "Form editor",
+  "name": "@expandorg/richtext",
+  "version": "0.1.0",
+  "description": "Expand rich text editor",
   "author": "expand.org",
   "license": "MPL-2.0",
   "main": "index.js",
@@ -13,21 +13,19 @@
     "url": "https://github.com/expandorg/form-editor/issues"
   },
   "peerDependencies": {
-    "@expandorg/components": "^0.2.0",
-    "@expandorg/modules": "^0.2.0",
     "@expandorg/uikit": "^0.2.0",
-    "@expandorg/validation": "^0.2.0",
+    "@expandorg/components": "^0.2.0",
     "classnames": "^2.0.0",
     "prop-types": "^15.0.0",
     "react": "^16.0.0",
-    "react-dnd": "^10.0.0",
-    "react-dnd-html5-backend": "^10.0.0",
     "react-dom": "^16.0.0"
   },
   "dependencies": {
-    "@expandorg/richtext": "^0.1.0",
     "debounce": "^1.2.0",
-    "immer": "^5.3.6",
-    "nanoid": "^2.1.11"
+    "draft-js": "^0.11.4",
+    "draft-js-export-html": "^1.4.1",
+    "draft-js-import-html": "^1.4.1",
+    "draft-js-mention-plugin": "^3.1.5",
+    "draft-js-plugins-editor": "^3.0.0"
   }
 }

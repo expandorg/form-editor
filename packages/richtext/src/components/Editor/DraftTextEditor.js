@@ -15,23 +15,22 @@ import {
   VariablesButton,
   LinkTool,
   ListTool,
-} from './toolbar';
-
-import { linkPlugin } from './toolbar/Link/Link';
+  linkPlugin,
+} from '../Toolbar';
 
 import {
   suggestionsOptions,
   formatSuggestions,
   suggestionsFilter,
   SuggestionsEntry,
-} from './suggest';
+} from '../Suggestions';
 
 import {
   getHtml,
   editorStateFromHtml,
   blockStyleFn,
   insertVariable,
-} from './content';
+} from '../../draftUtils';
 
 import styles from './DraftTextEditor.module.styl';
 

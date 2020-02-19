@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 
 import { Dropdown } from '@expandorg/components';
 
-import { fontPresets, applyFontPreset, getCurrentFontPreset } from '../content';
+import {
+  fontPresets,
+  applyFontPreset,
+  getCurrentFontPreset,
+} from '../../draftUtils';
 
 import styles from './FontPresetTool.module.styl';
 

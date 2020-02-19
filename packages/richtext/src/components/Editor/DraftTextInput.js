@@ -5,7 +5,7 @@ import cn from 'classnames';
 import Editor from 'draft-js-plugins-editor';
 import createMentionPlugin from 'draft-js-mention-plugin';
 
-import VariablesToggle from '../../VariablesDropdown/VariablesToggle';
+import VariablesToggle from '../Variables/VariablesToggle';
 
 import TopPlaceholder from './TopPlaceholder';
 
@@ -14,7 +14,7 @@ import {
   formatSuggestions,
   suggestionsFilter,
   SuggestionsEntry,
-} from './suggest';
+} from '../Suggestions';
 
 import {
   getText,
@@ -22,7 +22,7 @@ import {
   isEmpty,
   editorStateFromText,
   insertVariable,
-} from './content';
+} from '../../draftUtils';
 
 import styles from './DraftTextInput.module.styl';
 

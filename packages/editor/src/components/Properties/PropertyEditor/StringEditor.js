@@ -1,7 +1,8 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 
-import { DraftTextInput } from '../RichText';
+import { DraftTextInput } from '@expandorg/richtext';
+
 import { restoreVariables } from './restoreVariables';
 
 import styles from './styles.module.styl';

@@ -4,9 +4,9 @@ import cn from 'classnames';
 
 import { clickOutside } from '@expandorg/components';
 
-import { ReactComponent as IconLeft } from '../../assets/align-left.svg';
-import { ReactComponent as IconCenter } from '../../assets/align-center.svg';
-import { ReactComponent as IconRight } from '../../assets/align-right.svg';
+import { ReactComponent as IconLeft } from '../../../assets/align-left.svg';
+import { ReactComponent as IconCenter } from '../../../assets/align-center.svg';
+import { ReactComponent as IconRight } from '../../../assets/align-right.svg';
 
 import styles from './AlignmentTool.module.styl';
 

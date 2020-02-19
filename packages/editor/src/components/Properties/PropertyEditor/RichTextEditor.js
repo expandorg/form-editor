@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 
-import { DraftTextEditor } from '../RichText';
+import { DraftTextEditor } from '@expandorg/richtext';
 import { restoreVariables } from './restoreVariables';
 
 export default function RichTextEditor({

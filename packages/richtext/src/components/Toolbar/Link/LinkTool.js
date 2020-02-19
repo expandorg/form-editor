@@ -9,9 +9,9 @@ import {
   Input,
 } from '@expandorg/components';
 
-import { toggleLink, getLinkValue } from '../../content';
+import { toggleLink, getLinkValue } from '../../../draftUtils';
 
-import { ReactComponent as IconLink } from '../../assets/link.svg';
+import { ReactComponent as IconLink } from '../../../assets/link.svg';
 
 import styles from './LinkTool.module.styl';
 

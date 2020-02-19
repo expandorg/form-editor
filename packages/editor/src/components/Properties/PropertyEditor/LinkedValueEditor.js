@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { Button } from '@expandorg/components';
+import { DraftTextInput } from '@expandorg/richtext';
 
-import { DraftTextInput } from '../RichText';
 import { restoreVariables } from './restoreVariables';
 import { withValueContext } from '../../ValueContext';
 

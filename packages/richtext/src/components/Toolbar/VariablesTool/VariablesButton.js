@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import VariablesToggle from '../../../../VariablesDropdown/VariablesToggle';
+import VariablesToggle from '../../Variables/VariablesToggle';
 
 import styles from './VariablesButton.module.styl';
 

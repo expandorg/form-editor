@@ -1,4 +1,3 @@
-// @flow
 import styles from './styles.module.styl';
 
 const modules = {
@@ -29,6 +28,6 @@ const modules = {
   slider: styles.slider,
 };
 
-export default function miniIcon(type: string) {
+export default function miniIcon(type) {
   return modules[type] || styles.default;
 }

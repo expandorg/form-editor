@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { RichUtils } from 'draft-js';
 import { Tooltip } from '@expandorg/components';
 
-import { ReactComponent as Icon } from '../assets/list-ol.svg';
+import { RichUtils } from 'draft-js';
+
+import { ReactComponent as Icon } from '../../assets/list-ol.svg';
 
 import styles from './ListTool.module.styl';
 

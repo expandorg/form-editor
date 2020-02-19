@@ -5,21 +5,23 @@ import cn from 'classnames';
 
 import styles from './SuggestionsEntry.module.styl';
 
-const SuggestionsEntry = ({
+export default function SuggestionsEntry({
   className,
   mention,
   isFocused,
   searchValue,
   theme,
   ...rest
-}) => (
-  <div
-    {...rest}
-    className={cn(styles.container, { [styles.focused]: isFocused })}
-  >
-    <span className={styles.text}>{mention.suggestion}</span>
-  </div>
-);
+}) {
+  return (
+    <div
+      {...rest}
+      className={cn(styles.container, { [styles.focused]: isFocused })}
+    >
+      <span className={styles.text}>{mention.suggestion}</span>
+    </div>
+  );
+}
 
 SuggestionsEntry.propTypes = {
   className: PropTypes.string,
@@ -38,5 +40,3 @@ SuggestionsEntry.defaultProps = {
   isFocused: false,
   searchValue: undefined,
 };
-
-export default SuggestionsEntry;
