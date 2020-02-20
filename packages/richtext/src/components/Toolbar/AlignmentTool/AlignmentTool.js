@@ -5,10 +5,10 @@ import cn from 'classnames';
 import { Tooltip } from '@expandorg/components';
 
 import { ReactComponent as IconLeft } from '../../../assets/align-left.svg';
-import { ReactComponent as IconCenter } from '../../assets/align-center.svg';
-import { ReactComponent as IconRight } from '../../assets/align-right.svg';
+import { ReactComponent as IconCenter } from '../../../assets/align-center.svg';
+import { ReactComponent as IconRight } from '../../../assets/align-right.svg';
 
-import { applyAlignment, getActiveAlignment } from '../../../../content';
+import { applyAlignment, getActiveAlignment } from '../../../draftUtils';
 
 import AlignmentDropdown from './AlignmentDropdown';
 
