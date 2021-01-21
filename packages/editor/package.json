@@ -27,7 +27,7 @@
   "dependencies": {
     "@expandorg/richtext": "^0.1.2",
     "debounce": "^1.2.0",
-    "immer": "^5.3.6",
+    "immer": "^8.0.1",
     "nanoid": "^2.1.11"
   }
 }
